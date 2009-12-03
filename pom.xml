@@ -3,13 +3,13 @@
   <groupId>org.xwki.contrib</groupId>
   <artifactId>xwiki-macro-rssaggregator</artifactId>
   <name>XWiki Macros - RSS Agreggator</name>
-  <version>1.0</version>
+  <version>1.1-SNAPSHOT</version>
   <packaging>xar</packaging>
   <description>XWiki Macros - RSS Aggregator</description>
   <scm>
-    <connection>scm:svn:http://svn.xwiki.org/svnroot/xwiki/contrib/projects/xwiki-macro-rssaggregator/tags/xwiki-macro-rssaggregator-1.0</connection>
-    <developerConnection>scm:svn:https://svn.xwiki.org/svnroot/xwiki/contrib/projects/xwiki-macro-rssaggregator/tags/xwiki-macro-rssaggregator-1.0</developerConnection>
-    <url>http://svn.xwiki.org/svnroot/xwiki/contrib/projects/xwiki-macro-rssaggregator/tags/xwiki-macro-rssaggregator-1.0</url>
+    <connection>scm:svn:http://svn.xwiki.org/svnroot/xwiki/contrib/projects/xwiki-macro-rssaggregator/trunk/</connection>
+    <developerConnection>scm:svn:https://svn.xwiki.org/svnroot/xwiki/contrib/projects/xwiki-macro-rssaggregator/trunk/</developerConnection>
+    <url>http://svn.xwiki.org/svnroot/xwiki/contrib/projects/xwiki-macro-rssaggregator/trunk/</url>
   </scm>
   <build>
     <extensions>
