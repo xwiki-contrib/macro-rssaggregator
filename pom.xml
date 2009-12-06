@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.xwki.contrib</groupId>
   <artifactId>xwiki-macro-rssaggregator</artifactId>
-  <name>XWiki Macros - RSS Agreggator</name>
+  <name>Contrib - Macro - RSS Aggregator</name>
   <version>1.1-SNAPSHOT</version>
   <packaging>xar</packaging>
   <description>XWiki Macros - RSS Aggregator</description>
