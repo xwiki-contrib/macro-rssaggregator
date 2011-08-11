@@ -7,9 +7,9 @@
   <packaging>xar</packaging>
   <description>XWiki Macros - RSS Aggregator</description>
   <scm>
-    <connection>scm:svn:http://svn.xwiki.org/svnroot/xwiki/contrib/projects/xwiki-macro-rssaggregator/trunk/</connection>
-    <developerConnection>scm:svn:https://svn.xwiki.org/svnroot/xwiki/contrib/projects/xwiki-macro-rssaggregator/trunk/</developerConnection>
-    <url>http://svn.xwiki.org/svnroot/xwiki/contrib/projects/xwiki-macro-rssaggregator/trunk/</url>
+    <connection>scm:git:git://github.com/xwiki-contrib/macro-rssaggregator.git</connection>
+    <developerConnection>scm:git:git@github.com:xwiki-contrib/macro-rssaggregator.git</developerConnection>
+    <url>https://github.com/xwiki-contrib/macro-rssaggregator</url>
   </scm>
   <build>
     <extensions>
