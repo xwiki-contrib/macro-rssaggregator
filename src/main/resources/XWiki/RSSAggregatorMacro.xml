@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <xwikidoc>
-<web>Macros</web>
-<name>RssAggregatorMacro</name>
+<web>XWiki</web>
+<name>RSSAggregatorMacro</name>
 <language></language>
 <defaultLanguage></defaultLanguage>
 <translation>0</translation>
-<parent></parent>
-<creator>XWiki.JeromeVelociter</creator>
-<author>XWiki.JeromeVelociter</author>
+<parent>XWiki.WebHome</parent>
+<creator>xwiki:XWiki.Admin</creator>
+<author>xwiki:XWiki.Admin</author>
 <customClass></customClass>
-<contentAuthor>XWiki.JeromeVelociter</contentAuthor>
+<contentAuthor>xwiki:XWiki.Admin</contentAuthor>
 <creationDate>1252763692000</creationDate>
-<date>1259854889000</date>
-<contentUpdateDate>1259854889000</contentUpdateDate>
+<date>1353438675000</date>
+<contentUpdateDate>1353438675000</contentUpdateDate>
 <version>1.1</version>
-<title></title>
+<title>RSS Aggregator Macro</title>
 <template></template>
 <defaultTemplate></defaultTemplate>
 <validationScript></validationScript>
@@ -35,6 +34,7 @@
 <validationScript></validationScript>
 <cache>
 <cache>0</cache>
+<disabled>0</disabled>
 <displayType>select</displayType>
 <multiSelect>0</multiSelect>
 <name>cache</name>
@@ -49,6 +49,7 @@
 <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
 </cache>
 <code>
+<disabled>0</disabled>
 <name>code</name>
 <number>2</number>
 <prettyName>Code</prettyName>
@@ -58,6 +59,7 @@
 <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
 </code>
 <name>
+<disabled>0</disabled>
 <name>name</name>
 <number>1</number>
 <prettyName>Name</prettyName>
@@ -66,6 +68,7 @@
 <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
 </name>
 <parse>
+<disabled>0</disabled>
 <displayFormType>select</displayFormType>
 <displayType>yesno</displayType>
 <name>parse</name>
@@ -76,6 +79,7 @@
 </parse>
 <use>
 <cache>0</cache>
+<disabled>0</disabled>
 <displayType>select</displayType>
 <multiSelect>0</multiSelect>
 <name>use</name>
@@ -86,14 +90,14 @@
 <separators> ,|</separators>
 <size>1</size>
 <unmodifiable>0</unmodifiable>
-<values>onDemand=On demand|always=Always</values>
+<values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
 <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
 </use>
 </class>
-<name>Macros.RssAggregatorMacro</name>
+<name>XWiki.RSSAggregatorMacro</name>
 <number>0</number>
 <className>XWiki.StyleSheetExtension</className>
-<guid>2ea57197-d8a9-4eed-897a-f241e2bed0df</guid>
+<guid>99a118eb-6c82-4b0f-881a-733d2ce62181</guid>
 <property>
 <cache>default</cache>
 </property>
@@ -125,24 +129,25 @@ table.rssaggregator .wikimodel-verbatim {
 <validationScript></validationScript>
 <tags>
 <cache>0</cache>
+<disabled>0</disabled>
 <displayType>input</displayType>
 <multiSelect>1</multiSelect>
 <name>tags</name>
 <number>1</number>
 <prettyName>Tags</prettyName>
 <relationalStorage>1</relationalStorage>
-<separator> </separator>
-<separators> ,|</separators>
+<separator>|</separator>
+<separators>|,</separators>
 <size>30</size>
 <unmodifiable>0</unmodifiable>
 <values></values>
 <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
 </tags>
 </class>
-<name>Macros.RssAggregatorMacro</name>
+<name>XWiki.RSSAggregatorMacro</name>
 <number>0</number>
 <className>XWiki.TagClass</className>
-<guid>f24aca25-9f6c-4359-862d-f7728b533fa4</guid>
+<guid>6556e1a8-b129-4b68-97e2-790a0cc24139</guid>
 <property>
 <tags/>
 </property>
@@ -158,113 +163,109 @@ table.rssaggregator .wikimodel-verbatim {
 <nameField></nameField>
 <validationScript></validationScript>
 <code>
-<editor>---</editor>
+<disabled>0</disabled>
 <name>code</name>
-<number>8</number>
-<picker>0</picker>
+<number>9</number>
 <prettyName>Macro code</prettyName>
-<rows>5</rows>
+<rows>20</rows>
 <size>40</size>
 <unmodifiable>0</unmodifiable>
-<validationMessage></validationMessage>
-<validationRegExp></validationRegExp>
 <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
 </code>
 <contentDescription>
-<editor>---</editor>
+<disabled>0</disabled>
 <name>contentDescription</name>
-<number>7</number>
-<picker>0</picker>
+<number>8</number>
 <prettyName>Content description (Not applicable for "No content" type)</prettyName>
 <rows>5</rows>
 <size>40</size>
 <unmodifiable>0</unmodifiable>
-<validationMessage></validationMessage>
-<validationRegExp></validationRegExp>
 <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
 </contentDescription>
 <contentType>
 <cache>0</cache>
+<disabled>0</disabled>
 <displayType>select</displayType>
 <multiSelect>0</multiSelect>
 <name>contentType</name>
-<number>6</number>
-<picker>0</picker>
+<number>7</number>
 <prettyName>Macro content type</prettyName>
 <relationalStorage>0</relationalStorage>
-<separator></separator>
+<separator>|</separator>
 <separators>|</separators>
 <size>1</size>
-<sort>none</sort>
 <unmodifiable>0</unmodifiable>
-<validationMessage></validationMessage>
-<validationRegExp></validationRegExp>
-<values>Mandatory|Optional|No content</values>
+<values>Optional|Mandatory|No content</values>
 <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
 </contentType>
 <defaultCategory>
+<disabled>0</disabled>
 <name>defaultCategory</name>
 <number>4</number>
-<picker>0</picker>
 <prettyName>Default category</prettyName>
 <size>30</size>
 <unmodifiable>0</unmodifiable>
-<validationMessage></validationMessage>
-<validationRegExp></validationRegExp>
 <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
 </defaultCategory>
 <description>
-<editor>PureText</editor>
+<disabled>0</disabled>
 <name>description</name>
 <number>3</number>
-<picker>0</picker>
 <prettyName>Macro description</prettyName>
 <rows>5</rows>
 <size>40</size>
 <unmodifiable>0</unmodifiable>
-<validationMessage></validationMessage>
-<validationRegExp></validationRegExp>
 <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
 </description>
 <id>
+<disabled>0</disabled>
 <name>id</name>
 <number>1</number>
-<picker>0</picker>
 <prettyName>Macro id</prettyName>
 <size>30</size>
 <unmodifiable>0</unmodifiable>
-<validationMessage></validationMessage>
-<validationRegExp></validationRegExp>
 <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
 </id>
 <name>
+<disabled>0</disabled>
 <name>name</name>
 <number>2</number>
-<picker>0</picker>
 <prettyName>Macro name</prettyName>
 <size>30</size>
 <unmodifiable>0</unmodifiable>
-<validationMessage></validationMessage>
-<validationRegExp></validationRegExp>
 <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
 </name>
 <supportsInlineMode>
-<defaultValue>1</defaultValue>
+<disabled>0</disabled>
 <displayFormType>select</displayFormType>
-<displayType></displayType>
+<displayType>yesno</displayType>
 <name>supportsInlineMode</name>
 <number>5</number>
 <prettyName>Supports inline mode</prettyName>
 <unmodifiable>0</unmodifiable>
-<validationMessage></validationMessage>
-<validationRegExp></validationRegExp>
 <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
 </supportsInlineMode>
+<visibility>
+<cache>0</cache>
+<disabled>0</disabled>
+<displayType>select</displayType>
+<multiSelect>0</multiSelect>
+<name>visibility</name>
+<number>6</number>
+<prettyName>Macro visibility</prettyName>
+<relationalStorage>0</relationalStorage>
+<separator>|</separator>
+<separators>|</separators>
+<size>1</size>
+<unmodifiable>0</unmodifiable>
+<values>Current User|Current Wiki|Global</values>
+<classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+</visibility>
 </class>
-<name>Macros.RssAggregatorMacro</name>
+<name>XWiki.RSSAggregatorMacro</name>
 <number>0</number>
 <className>XWiki.WikiMacroClass</className>
-<guid>4a019fde-047c-4d9d-853d-0f1c58ee10ec</guid>
+<guid>ccaade3c-9c5f-4c35-8d24-31b75d3e12d9</guid>
 <property>
 <code>{{groovy}}
 import java.util.TreeMap;
@@ -272,26 +273,39 @@ import com.sun.syndication.feed.synd.SyndEntry;
 import com.sun.syndication.feed.synd.SyndFeed;
 import com.sun.syndication.io.SyndFeedInput;
 import com.sun.syndication.io.XmlReader;
-
-xwiki.ssx.use("Macros.RssAggregatorMacro")
+import org.apache.commons.codec.binary.Base64
 
 def urls = [];
 def entries = new TreeMap();
 
-xcontext.macro.content.eachLine() {	urls.add(it.trim()); }
+xcontext.macro.content.eachLine() { urls.add(it.trim()); }
 
 urls.each() { rssUrl -&gt;
-  def feed = new SyndFeedInput().build(new XmlReader(new URL(rssUrl)));
-  feed.entries.each() {  entries.put(it.publishedDate, ["entry":it, "feed": feed]); }
+  try {
+    URL url = new URL(rssUrl);
+    URLConnection urlConnection = url.openConnection();
+    if (url.getUserInfo() != null) {
+        String basicAuth = "Basic " + new String(new Base64().encode(url.getUserInfo().getBytes()));
+        urlConnection.setRequestProperty("Authorization", basicAuth);
+    }
+    InputStream inputStream = urlConnection.getInputStream();
+    def feed = new SyndFeedInput().build(new XmlReader(inputStream));
+    feed.entries.each() { entries.put(it.publishedDate, ["entry":it, "feed": feed]); }
+  } catch(Exception e) {
+    println "There was an error while trying to retrieve RSS feed."
+    // Enable for debugging:
+    // println e.getMessage()
+  }
 }
-println """(% class='rssaggregator' %)"""
-println """|=Title|=Date|=Author|=Feed"""
-(entries.keySet() as List).reverse()[0..10].each() { 
-   def e = entries.get(it).entry, f = entries.get(it).feed;
-   print """|[[{{{${e.title}}}}&gt;&gt;${e.link}]]|{{{${xwiki.formatDate(e.publishedDate)}}}}|"""
-   println """{{{${e.author}}}}|[[{{{${f.title}}}}&gt;&gt;${f.link}]]"""
+def mysize = entries.keySet().size()
+if (mysize &gt;= 1) {
+    println """|=Title|=Date|=Author|=Feed"""
+    (entries.keySet() as List).reverse()[0..mysize-1].each() {
+       def e = entries.get(it).entry, f = entries.get(it).feed;
+       print """|[[{{{${e.title}}}}&gt;&gt;${e.link}]]|{{{${xwiki.formatDate(e.publishedDate)}}}}|"""
+       println """{{{${e.author}}}}|[[{{{${f.title}}}}&gt;&gt;${f.link}]]"""
+    }
 }
-
 {{/groovy}}</code>
 </property>
 <property>
@@ -314,6 +328,9 @@ println """|=Title|=Date|=Author|=Feed"""
 </property>
 <property>
 <supportsInlineMode>0</supportsInlineMode>
+</property>
+<property>
+<visibility>Current User</visibility>
 </property>
 </object>
 <content>{{rssaggregator}}
